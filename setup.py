@@ -7,7 +7,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.11'
+VERSION = '0.0.12'
 DESCRIPTION = 'Generate csv or jsons with ip info'
 LONG_DESCRIPTION = 'Given a list of ips massiprecon will find location and provider info etc and write them to a csv or json'
 
@@ -20,7 +20,7 @@ setup(
     long_description_content_type="text/markdown",
     long_description=long_description,
     packages=['massiprecon'],
-    install_requires=['argparse'],
+    install_requires=['argparse','advocate'],
     keywords=['python', 'hack', 'osint', 'recon', 'data', 'api', 'ip'],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
